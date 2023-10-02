@@ -45,7 +45,7 @@ public class QuestionController {
         lblScore.setText("Score: " + score);
     }
 
-    @FXML
+  /*  @FXML
     public void sendScore() {
         ToggleGroup[] questions = {gr1, gr2, gr3, gr4, gr5, gr6, gr7, gr8, gr9};
         int score = 0;
@@ -67,5 +67,32 @@ public class QuestionController {
 
         Stage stage = (Stage) lblScore.getScene().getWindow();
         stage.close();
+    }*/
+
+    @FXML
+    public void sendScore() {
+        ToggleGroup[] questions = {gr1, gr2, gr3, gr4, gr5, gr6, gr7, gr8, gr9};
+        int score = 0;
+
+        for (ToggleGroup question : questions) {
+            RadioButton selectedRadioButton = (RadioButton) question.getSelectedToggle();
+            if (selectedRadioButton != null) {
+                String toggleGroupValue = selectedRadioButton.getText();
+                if (toggleGroupValue.equals("Disagree"))
+                    score--;
+                else if (toggleGroupValue.equals("Agree"))
+                    score++;
+            }
+        }
+
+        String userName = lblUsername.getText();
+        MainController.Participant participant = new MainController.Participant(userName, score);
+        mainController.addParticipant(participant);
+
+        mainController.updateParticipantsList(); // Update the ListView
+
+        Stage stage = (Stage) lblScore.getScene().getWindow();
+        stage.close();
     }
+
 }

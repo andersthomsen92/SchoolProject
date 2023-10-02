@@ -1,9 +1,13 @@
 package Questions.gui;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 import javafx.scene.control.TextField;
 
@@ -32,6 +36,10 @@ public class MainController {
         String userName = txtUsername.getText();
         controller.setUsername(userName);
     }
+    @FXML
+    private ListView<String> listParticipants;
+
+    private ObservableList<Participant> participantsList = FXCollections.observableArrayList();
 
     private String name;
     private int score;
@@ -59,4 +67,17 @@ public class MainController {
     public void addParticipant(Participant participant) {
         participants.add(participant);
     }
+
+    public void updateParticipantsList() {
+        listParticipants.getItems().clear();
+
+        for (Participant participant : participantsList) {
+            String participantData = participant.getName() + " - Score: " + participant.getScore();
+            listParticipants.getItems().add(participantData);
+        }
+    }
+
+
+
 }
+
