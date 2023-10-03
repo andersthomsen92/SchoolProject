@@ -1,7 +1,10 @@
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputDialog;
+
 
 import java.net.URL;
 import java.util.Optional;
@@ -12,6 +15,11 @@ public class NumberConversionController implements Initializable {
 
     @FXML
     private Label label;
+    @FXML
+    private TextField txtNumberInput;
+    @FXML
+    private Label lblResult;
+
 
     private NumberConversionModel ncModel = new NumberConversionModel();
 
@@ -29,5 +37,16 @@ public class NumberConversionController implements Initializable {
             label.setText(message);
         }
     }
+
+
+    @FXML
+    private void onClick(ActionEvent actionEvent)
+   {
+       double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
+       double result = ncModel.getMilesFromKilometers(txtFieldValue);
+       String resultAsString = String.valueOf(result);
+       lblResult.setText(resultAsString);
+   }
+
 
 }
