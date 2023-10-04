@@ -44,9 +44,35 @@ public class NumberConversionController implements Initializable {
    {
        double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
        double result = ncModel.getMilesFromKilometers(txtFieldValue);
-       String resultAsString = String.valueOf(result);
+       String resultAsString = String.format("%.3f",result);
        lblResult.setText(resultAsString);
    }
+    @FXML
+    private void onClick1(ActionEvent actionEvent)
+    {
+        double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
+        double result = ncModel.getKilometersFromMiles(txtFieldValue);
+        String resultAsString = String.format("%.3f",result);
+        lblResult.setText(resultAsString);
+    }
+
+    @FXML
+    private void onClick2(ActionEvent actionEvent)
+    {
+        double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
+        double result = ncModel.convertPoundsToKg(txtFieldValue);
+        String resultAsString = String.format("%.3f",result);
+        lblResult.setText(resultAsString);
+    }
+
+    @FXML
+    private void onClick3(ActionEvent actionEvent)
+    {
+        double txtFieldValue = Double.parseDouble(txtNumberInput.getText());
+        double result = ncModel.convertKgToPounds(txtFieldValue);
+        String resultAsString = String.format("%.3f",result);
+        lblResult.setText(resultAsString);
+    }
 
 
 }

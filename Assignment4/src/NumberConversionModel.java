@@ -14,5 +14,12 @@ public class NumberConversionModel {
         return miles * 1.609344;
     }
 
+    public double convertPoundsToKg(double pounds) {
+         return pounds * 0.45359237;
+    }
+
+    public double convertKgToPounds(double kg) {
+        return kg / 0.45359237;
+    }
 }
 
