@@ -69,8 +69,8 @@ public class QuestionController {
         stage.close();
     }*/
 
-    @FXML
-    public void sendScore() {
+
+   /* public void sendScore() {
         ToggleGroup[] questions = {gr1, gr2, gr3, gr4, gr5, gr6, gr7, gr8, gr9};
         int score = 0;
 
@@ -93,6 +93,6 @@ public class QuestionController {
 
         Stage stage = (Stage) lblScore.getScene().getWindow();
         stage.close();
-    }
+    }*/
 
 }

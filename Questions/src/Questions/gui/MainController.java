@@ -36,7 +36,7 @@ public class MainController {
         String userName = txtUsername.getText();
         controller.setUsername(userName);
     }
-    @FXML
+    /*@FXML
     private ListView<String> listParticipants;
 
     private ObservableList<Participant> participantsList = FXCollections.observableArrayList();
@@ -75,7 +75,7 @@ public class MainController {
             String participantData = participant.getName() + " - Score: " + participant.getScore();
             listParticipants.getItems().add(participantData);
         }
-    }
+    }*/
 
 
 

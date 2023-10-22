@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysDemo/ArraysDemo.iml" filepath="$PROJECT_DIR$/ArraysDemo/ArraysDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX-Template/JavaFX-Template.iml" filepath="$PROJECT_DIR$/JavaFX-Template/JavaFX-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Questionaire/Questionaire.iml" filepath="$PROJECT_DIR$/Questionaire/Questionaire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuestionaireHelp/QuestionaireHelp.iml" filepath="$PROJECT_DIR$/QuestionaireHelp/QuestionaireHelp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Questions/Questions.iml" filepath="$PROJECT_DIR$/Questions/Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SchoolProject.iml" filepath="$PROJECT_DIR$/.idea/SchoolProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String-Assignment/String-Assignment.iml" filepath="$PROJECT_DIR$/String-Assignment/String-Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringApplication/StringApplication.iml" filepath="$PROJECT_DIR$/StringApplication/StringApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/TicTacToe/TicTacToe.iml" />
+    </modules>
+  </component>
+</project>
