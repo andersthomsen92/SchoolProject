@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <ListView fx:id="listTodo" layoutX="39.0" layoutY="109.0" prefHeight="344.0" prefWidth="191.0" />
+      <ListView fx:id="listInProgress" layoutX="300.0" layoutY="109.0" prefHeight="344.0" prefWidth="200.0" />
+      <ListView fx:id="listCompleted" layoutX="569.0" layoutY="109.0" prefHeight="344.0" prefWidth="200.0" />
+      <Label layoutX="102.0" layoutY="74.0" text="To Do">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="74.0" text="In Progress">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="74.0" text="Completed">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="343.0" layoutY="508.0" mnemonicParsing="false" onAction="#addTask" prefHeight="25.0" prefWidth="97.0" text="Add Task" />
+      <Button fx:id="btnProgess" layoutX="252.0" layoutY="243.0" mnemonicParsing="false" onAction="#toProgress" text="&gt;" />
+      <Button fx:id="btnTodo" layoutX="252.0" layoutY="300.0" mnemonicParsing="false" onAction="#toTodo" text="&lt;" />
+      <Button fx:id="btnCompleted" layoutX="522.0" layoutY="243.0" mnemonicParsing="false" onAction="#toCompleted" text="&gt;" />
+      <Button fx:id="btnUnprogress" layoutX="522.0" layoutY="300.0" mnemonicParsing="false" onAction="#toUnprogress" text="&lt;" />
+      <TextField fx:id="txtAdd" layoutX="317.0" layoutY="533.0" />
+      <Button fx:id="btnRemove" layoutX="74.0" layoutY="453.0" mnemonicParsing="false" onAction="#removeTask" text="Remove To Do Task" />
+      <Button fx:id="btnRemoveCompleted" layoutX="595.0" layoutY="453.0" mnemonicParsing="false" onAction="#removeCompleted" text="Remove Completed Task" />
+      <Button fx:id="btnRemoveProgress" layoutX="318.0" layoutY="453.0" mnemonicParsing="false" onAction="#removeProgress" text="Remove In Progress Task" />
+   </children>
+</AnchorPane>
