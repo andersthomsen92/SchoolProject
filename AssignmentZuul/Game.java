@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  *  This class is the main class of the "World of Zuul" application. 
  *  "World of Zuul" is a very simple, text based adventure game.  Users 
@@ -34,25 +36,40 @@ public class Game
      */
     private void createRooms()
     {
-        Room outside, theater, pub, lab, barracks,throneRoom,treasury,garden,fakeRoom;
+        Room outside, theater, pub, lab, barracks,throneRoom,treasury,garden,tower,arcaneStudy,towerRoof,cellar,armory,guardRoom,dungeon,storage,panicRoom;
       
         // create the rooms
-        fakeRoom = new Room("");
+
         outside = new Room("outside the main entrance of the university");
         theater = new Room("in a theater");
         pub = new Room("in the pub, smells of mold");
         lab = new Room("in a laboratory, you hear something shuffle");
         barracks = new Room("in the office");
-        treasury = new Room("In the treasury, it glitters and shines");
+        treasury = new Room("In the treasury, glittering gold, trinkets, and baubles... Paid for in blood!");
         throneRoom = new Room("The throne room, a single ornate chair, is placed in the middle.");
         garden = new Room("Well kept garden, something is rustling in the greenery");
-        fakeRoom = new Room("Fake room");
+        tower = new Room("In the groundfloor of the mages Tower");
+        arcaneStudy = new Room("books and magical objects are scattered around this arcane study.");
+        towerRoof = new Room("At the top of the tower, remind yourself that overconfidence is a slow and insidious killer.");
+        cellar = new Room("in this dank cellar, you see crates and barrels standing around.");
+        armory = new Room("in an armory, filled with weapons and armor");
+        guardRoom = new Room("Stools and tables, left empty with discarded dice and mugs, in this guardroom");
+        dungeon = new Room("A disused dungeon, with empty cells. Yet, you hear rattling");
+        storage = new Room("Organized rows and rows of crates and paintings");
+        panicRoom = new Room("in a panic room for the royalty");
+
+        // create the items
+
+        Item oldBook = new Item("Old book","Decrepit book",0.5);
+        Item labReagent = new Item("Reagent Bottle", "A bottle full of aqua regia",0.2);
 
         // initialise room exits
         // Outside
         outside.setExits("west",pub);
         outside.setExits("south",lab);
         outside.setExits("east",theater);
+        outside.addItem(oldBook);
+
         // Pub
         pub.setExits("east",outside);
         pub.setExits("south",barracks);
@@ -61,10 +78,12 @@ public class Game
         // Barracks
         barracks.setExits("north",pub);
         barracks.setExits("east",lab);
+        barracks.setExits("downstairs",cellar);
         // Laboratory
         lab.setExits("north",outside);
         lab.setExits("west",barracks);
         lab.setExits("south",garden);
+        lab.addItem(labReagent);
         // Garden
         garden.setExits("north",lab);
         garden.setExits("south",throneRoom);
@@ -73,17 +92,8 @@ public class Game
         throneRoom.setExits("east",treasury);
         // Treasury
         treasury.setExits("west",throneRoom);
-        /*
-        fakeRoom.setExits(null,null,null,null,null,null);
-        outside.setExits(null, theater, lab, pub,treasury,treasury);
-        theater.setExits(null, null, null, outside,null,null);
-        pub.setExits(null, outside, barracks, null,null,null);
-        lab.setExits(outside, null, garden, barracks,null,null);
-        barracks.setExits(pub, lab, null,null,null,null);
-        garden.setExits(lab,null,throneRoom,null,null,null);
-        throneRoom.setExits(garden,treasury,null,null, null, null);
-        treasury.setExits(null,null,null,throneRoom, outside, outside);
-        */
+        // Cellar
+        cellar.setExits("upstairs",barracks);
 
         currentRoom = outside;  // start game outside
     }
@@ -108,9 +118,16 @@ public class Game
 
     private void printLocationInfo()
     {
-        System.out.println("You are " + currentRoom.getDescription());
-        String exitString = currentRoom.getExitString();
-        System.out.println(exitString);
+        System.out.println(currentRoom.getLongDescription());
+
+        List<Item> items = currentRoom.getItems();
+        if (!items.isEmpty()) {
+            System.out.println("Items in the room:");
+            for (Item item : items) {
+                System.out.println(item.getLongItemDescription());
+            }
+        }
+
         /*System.out.println("Exits: ");
         if (currentRoom.getExit("north") != null)
             {System.out.println("north ");}
@@ -164,6 +181,12 @@ public class Game
         else if (commandWord.equals("quit")) {
             wantToQuit = quit(command);
         }
+        else if (commandWord.equals("look")) {
+            System.out.println(currentRoom.getLongDescription());
+        } else if (commandWord.equals("eat"))
+        {
+            System.out.println("You ate a ration, you are sated.");
+        }
 
         return wantToQuit;
     }
@@ -181,7 +204,7 @@ public class Game
         System.out.println("around at the university.");
         System.out.println();
         System.out.println("Your command words are:");
-        System.out.println("   go quit help");
+        parser.showCommands();
     }
 
     /** 

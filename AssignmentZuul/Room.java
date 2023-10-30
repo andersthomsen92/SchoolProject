@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -25,6 +27,7 @@ public class Room
     private Room downExit;
     private Room upExit;
     private HashMap<String, Room> exits;
+    private List<Item> items;
 
 
     /**
@@ -37,6 +40,7 @@ public class Room
     {
         this.description = description;
         exits = new HashMap<String, Room>();
+        items = new ArrayList<>();
     }
 
     /**
@@ -50,21 +54,6 @@ public class Room
     public void setExits(String direction,Room neighbor)
     {
         exits.put(direction, neighbor);
-        // Random Change
- /*       if(north != null)
-            exits.put("north", north);
-        if(east != null)
-            exits.put("east",east);
-        if(south != null)
-            exits.put("south",south);
-        if(west != null)
-            exits.put("west", west);
-        if (upstairs != null)
-            exits.put("upstairs",upstairs);
-        if (downstairs != null)
-            exits.put("downstairs",downstairs);/
-
-  */
     }
     public Room getExit(String direction)
     {
@@ -93,5 +82,25 @@ public class Room
     {
         return description;
     }
+
+    /**
+     * Return a long description of this room, of the form:
+     * You are in the kitchen.
+     * Exits: north west
+     * @return A description of the room, including exits.
+     */
+    public String getLongDescription()
+    {
+        return "You are " + description + ".\n" + getExitString();
+    }
+    // ITEMS
+
+    public void addItem(Item item){
+        items.add(item);
+    }
+    public List<Item> getItems() {
+        return items;
+    }
+
 
 }
