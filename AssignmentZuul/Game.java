@@ -1,3 +1,4 @@
+import java.util.ArrayDeque;
 import java.util.List;
 
 /**
@@ -20,15 +21,23 @@ import java.util.List;
 public class Game 
 {
     private Parser parser;
+    private Player player;
     private Room currentRoom;
-        
+    private ArrayDeque<Room> roomHistory;
+    private Room outside;
+
     /**
      * Create the game and initialise its internal map.
      */
-    public Game() 
+    public Game()
     {
         createRooms();
+
         parser = new Parser();
+        roomHistory = new ArrayDeque<>();
+        player = new Player();
+        player.setCurrentRoom(currentRoom);
+
     }
 
     /**
@@ -46,16 +55,16 @@ public class Game
         lab = new Room("in a laboratory, you hear something shuffle");
         barracks = new Room("in the office");
         treasury = new Room("In the treasury, glittering gold, trinkets, and baubles... Paid for in blood!");
-        throneRoom = new Room("The throne room, a single ornate chair, is placed in the middle.");
-        garden = new Room("Well kept garden, something is rustling in the greenery");
-        tower = new Room("In the groundfloor of the mages Tower");
-        arcaneStudy = new Room("books and magical objects are scattered around this arcane study.");
-        towerRoof = new Room("At the top of the tower, remind yourself that overconfidence is a slow and insidious killer.");
+        throneRoom = new Room("In the throne room, a single ornate chair, is placed in the middle.");
+        garden = new Room("in a well kept garden, something is rustling in the greenery");
+        tower = new Room("on the groundfloor of the mages Tower");
+        arcaneStudy = new Room("in this arcane study, books and magical objects scattered about.");
+        towerRoof = new Room("at the top of the tower, remind yourself that overconfidence is a slow and insidious killer.");
         cellar = new Room("in this dank cellar, you see crates and barrels standing around.");
         armory = new Room("in an armory, filled with weapons and armor");
-        guardRoom = new Room("Stools and tables, left empty with discarded dice and mugs, in this guardroom");
-        dungeon = new Room("A disused dungeon, with empty cells. Yet, you hear rattling");
-        storage = new Room("Organized rows and rows of crates and paintings");
+        guardRoom = new Room("in a guardroom, nearly kept, but recently abandoned");
+        dungeon = new Room("in a disused dungeon, with empty cells. Yet, you hear rattling");
+        storage = new Room("in what seems to be a storage room, you see organized rows and rows of crates and paintings");
         panicRoom = new Room("in a panic room for the royalty");
 
         // create the items
@@ -95,7 +104,8 @@ public class Game
         // Cellar
         cellar.setExits("upstairs",barracks);
 
-        currentRoom = outside;  // start game outside
+        currentRoom = outside;
+
     }
 
     /**
@@ -172,20 +182,17 @@ public class Game
         }
 
         String commandWord = command.getCommandWord();
-        if (commandWord.equals("help")) {
-            printHelp();
-        }
-        else if (commandWord.equals("go")) {
-            goRoom(command);
-        }
-        else if (commandWord.equals("quit")) {
-            wantToQuit = quit(command);
-        }
-        else if (commandWord.equals("look")) {
-            System.out.println(currentRoom.getLongDescription());
-        } else if (commandWord.equals("eat"))
-        {
-            System.out.println("You ate a ration, you are sated.");
+        switch (commandWord) {
+            case "help" -> printHelp();
+            case "go" -> goRoom(command);
+            case "quit" -> wantToQuit = quit(command);
+            case "look" ->
+            {
+                List<Item> items = currentRoom.getItems();
+                printLocationInfo();
+            }
+            case "eat" -> System.out.println("You ate a ration, you are sated.");
+            case "back" -> goBack();
         }
 
         return wantToQuit;
@@ -218,18 +225,27 @@ public class Game
             System.out.println("Go where?");
             return;
         }
-
         String direction = command.getSecondWord();
-
         // Try to leave current room.
-        Room nextRoom = currentRoom.getExit(direction);
-
+        Room nextRoom = player.getCurrentRoom().getExit(direction);
         if (nextRoom == null) {
             System.out.println("There is no door!");
         }
         else {
+            roomHistory.addFirst(currentRoom);
             currentRoom = nextRoom;
+            player.setCurrentRoom(nextRoom);
             printLocationInfo();
+        }
+    }
+
+    private void goBack(){
+        Room previousRoom = roomHistory.pollFirst();  // gets the last item added to this ArrayDequeue
+        if (previousRoom != null){
+            currentRoom = previousRoom;     // sets currentRoom to previousRoom from the list.
+            printLocationInfo();
+        } else {
+            System.out.println("You cannot retrace your steps back any further");
         }
     }
 

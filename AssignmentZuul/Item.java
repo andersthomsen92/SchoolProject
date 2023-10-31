@@ -24,7 +24,11 @@ private double weight;
 
     public String getLongItemDescription()
     {
-        return "- " + name + " (" + description + ") weight: " + weight + "kg";
+       // return "- Name:" + name + " (" + description + ") weight: " + weight + "kg";
+        return "> Name: " + name +" <\n"
+                + "> Description: " + description + " <\n"
+                + "> Weight: " + weight + "kg <";
+
     }
 
 }
