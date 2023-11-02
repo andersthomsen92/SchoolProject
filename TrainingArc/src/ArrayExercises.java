@@ -119,10 +119,91 @@ public class ArrayExercises {
 
     }
     //9. Write a Java program to insert an element (specific position) into an array.
-    public void Exercise9()
-    {
-        // look at exercise 7 even though its bugged
-    }
+    public void Exercise9() {
+        int[] intArray = {1, 3, 4, 1};
+        int indexPos = 3;
+        int newValue = 100;
 
+        // Create a new array with a larger size
+        int[] newArray = new int[intArray.length + 1];
+        System.out.println("Original Array: " + Arrays.toString(intArray));
+
+
+        for (int i = 0; i < indexPos; i++) {        // This loop copies intArray, up to the IndexPos, into newArray
+            newArray[i] = intArray[i];
+        }
+
+        newArray[indexPos] = newValue;      // Inserts the new value into the required pos.
+
+        for (int i = indexPos; i < intArray.length; i++) {  // Copies the rest of intArray into the newArray.
+            newArray[i + 1] = intArray[i];
+        }
+
+        intArray = newArray; // sets intArray equal to newArray, this mean newArray is a "temp/unused" array.
+
+        System.out.println("Modified Array: " + Arrays.toString(intArray));
+    }
+    //27. Write a Java program to find the number of even and odd integers in a given array of integers.
+    public void Exercise10(){
+        int[] intArray = {1,4,2,5,7,1,2,6,8,4,1,5};
+        int counter = 0;
+        for (int i : intArray)
+            if (i % 2 == 0) {
+                counter++;
+            }
+
+        System.out.println("This is how many Odd numbers: " + (intArray.length - counter));
+        System.out.println("This is how many Even numbers: " + counter);
+
+    }
+    //28. Write a Java program to get the difference between the largest and smallest values in an array of integers.
+    public void Exercise11(){
+        int[] intArray = {1,2,4,7,5,4,100};
+        int maxVal = intArray[1];
+        int minVal = intArray[1];
+
+        for (int i : intArray)  // i takes on the value of the elements in the array
+            if (i > maxVal)  // if the number in i is > than 0
+            {
+                maxVal = i;   // it sets maxVal to the current i value
+            }
+        else       // otherwise the opposite happens
+        {
+            minVal = i;
+        }
+        System.out.println("Max value: " + maxVal + "\nMin Value: " + minVal);
+        System.out.println("Difference between the two is: " + (maxVal-minVal));
+    }
+    //33. Write a Java program to remove duplicate elements from a given array and return the updated array length.
+    public void Exercise12()
+    {
+        int[] intArray = {20,20,30,40,50,50,50};
+        System.out.println("Original array length: " + intArray.length);
+        System.out.println("Original array: " + Arrays.toString(intArray));
+
+        int newLength = Exercise12Sort(intArray);
+        System.out.println("Sorted array length: " + newLength);
+
+        // Access the sorted array up to the newLength
+        int[] sortedArray = Arrays.copyOf(intArray, newLength);
+        System.out.println("Sorted array: " + Arrays.toString(sortedArray));
+
+    }
+    private int Exercise12Sort(int[] intArray){
+      int index = 1;
+
+        for (int i = 1; i < intArray.length; i++)  // we start at 1, because index 0 is always considered unique
+        {
+            if (intArray[i] != intArray[index - 1])  // if "i" isnt the equal to previous i.
+                intArray[index++] = intArray[i];    // then we count i up once.
+        }
+        return index;
+    }
+    // 39. Write a Java program to print all the LEADERS in the array.
+    //Note: An element is leader if it is greater than all the elements to its right side.
+    public void Exercise13()
+    {
+
+    }
 }
 

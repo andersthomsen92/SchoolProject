@@ -21,6 +21,7 @@ public class Player {
     // TODO Need to implement the drop item and the total weight of the items
     // see SDE assignment with Interface Ishapes.
 
+
   /*  public void dropItem(){}
 
     public boolean lootItem(Item item)
@@ -37,17 +38,16 @@ public class Player {
         }
         return false;
     }*/
-
-    public void listInventory() {
-        if (inventory.isEmpty()) {
-            System.out.println("Your inventory is empty.");
-        } else {
-            System.out.println("Inventory:");
-            for (Item item : inventory) {
-                System.out.println(item.getDescription());
-            }
-        }
-    }
+  public void listInventory() {
+      if (inventory.isEmpty()) {
+          System.out.println("Your inventory is empty.");
+      } else {
+          System.out.println("Inventory:");
+          for (Item item : inventory) {
+              System.out.println(item.getDescription());
+          }
+      }
+  }
 
     private double calculateTotalWeight()
     {
