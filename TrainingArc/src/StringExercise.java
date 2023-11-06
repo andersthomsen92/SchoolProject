@@ -104,7 +104,7 @@ public class StringExercise {
     */
     public static void Exercise6() {
         String string1 = "tHiS iS ExErCiSe1";
-        String string2 = "This is Exercise1";
+        String string2 = "This is AbstractClassesExercise.Exercise1";
         int result = string1.compareToIgnoreCase(string2); // returns -1, 0 , 1 depending on outcome of the comparison.
         if (result < 0)     // if... then string1 is the first lexicographically(Alphabetically)
         {
