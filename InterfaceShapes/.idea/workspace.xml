@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a66a96f-1725-4a5c-8049-35bcaf75992c" name="Changes" comment="" />
+    <list default="true" id="da30328d-f98b-4668-a179-ff668c6d7295" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
 }</component>
-  <component name="ProjectId" id="2XL2ucfwIEtItCyHlKkC6mr0Pna" />
+  <component name="ProjectId" id="2XevHh2g5y4KvhoUzTWzfGY7pjD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,26 +24,24 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Datamatiker/Projekt/SDE3LayerExercise1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Datamatiker/Projekt/SchoolProject/AssignmentZuul&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Datamatiker/Projekt/SchoolProject/StrategyExample/src/Main.java&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a66a96f-1725-4a5c-8049-35bcaf75992c" name="Changes" comment="" />
-      <created>1698394265243</created>
+      <changelist id="da30328d-f98b-4668-a179-ff668c6d7295" name="Changes" comment="" />
+      <created>1699002295590</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698394265243</updated>
-      <workItem from="1698394266539" duration="7198000" />
-      <workItem from="1699004356400" duration="1138000" />
-      <workItem from="1699258120203" duration="2293000" />
+      <updated>1699002295590</updated>
+      <workItem from="1699002304187" duration="1215000" />
+      <workItem from="1699262818252" duration="227000" />
     </task>
     <servers />
   </component>
