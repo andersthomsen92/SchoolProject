@@ -64,8 +64,6 @@ public class CarDealerShip
     public void sellCar(Car car)
     {
         carsForSale.remove(car);
-        //TODO Implement this method
-       // throw new UnsupportedOperationException();
     }
 
     /**
@@ -74,8 +72,6 @@ public class CarDealerShip
      */
     public List<Car> getCarsForSale()
     {
-
-        //TODO Implement this method
         return carsForSale;
     }
 
@@ -85,10 +81,7 @@ public class CarDealerShip
     public void sortCarsByPrice()
     {
         Comparator comp = Comparator.comparingDouble(Car::getPrice);
-
         carsForSale.sort(comp);
-        //TODO Implement this method
-        //throw new UnsupportedOperationException();
     }
     
     /**
@@ -96,10 +89,7 @@ public class CarDealerShip
     */    
     public void sortCarsByMaxSpeed()
     {
-
         carsForSale.sort(Comparator.comparingInt(Car::getMaxKilometersPerHour));
-        //TODO Implement this method
-        //throw new UnsupportedOperationException();
     }
     
     /**
