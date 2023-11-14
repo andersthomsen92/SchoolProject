@@ -230,4 +230,14 @@ public class StringExercise {
                 System.out.println(FizzArray[i]);
         }
     }
+    public static String stringReverse(String str) {
+        if (str == null || str.length() <= 1) {
+            return str;
+        }
+
+        String reversedSubstring = stringReverse(str.substring(1));
+
+        // Concatenate the first character and the reversed substring
+        return reversedSubstring + str.charAt(0);
+    }
 }

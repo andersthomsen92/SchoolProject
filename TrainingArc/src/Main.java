@@ -11,7 +11,7 @@ public class Main {
 
 
         StringExercise stringExercise = new StringExercise();
-        //StringExercise.Exercise16();
+        StringExercise.stringReverse("THIS IS A TEST");
 
         /*
         - Remember to use the correct for loops, if you need to add and replace often.
@@ -28,7 +28,7 @@ public class Main {
         - Remember to create variables also :)
          */
         //FIXME Abstract Exercise 1 and 4
-        Animal lion = new Lion();
+/*        Animal lion = new Lion();
         lion.sound();
         lion.eat();
         lion.sleep();
@@ -38,7 +38,7 @@ public class Main {
         Animal deer = new Deer();
         deer.eat();
         deer.sound();
-        deer.sleep();
+        deer.sleep();*/
         //FIXME Abstract Exercise 2
         /*
         double radius = 4.0;

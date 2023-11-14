@@ -205,5 +205,13 @@ public class ArrayExercises {
     {
 
     }
+
+    public String stringReverse(String str) {
+        String reverseStr = "";
+        for (int i = 0; i < str.length(); i++) {
+            reverseStr = str.charAt(i) + reverseStr;
+        }
+        return reverseStr;
+    }
 }
 

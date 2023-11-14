@@ -30,7 +30,7 @@ public class CarDealerShip
             carsForSale.add(car);
         }
     }
-    
+
     /**
      * Gets the total value of all cars for sale.
      * @return the total value of all cars for sale.
@@ -48,13 +48,13 @@ public class CarDealerShip
      * @return the cheapest car from the list ov cars for sale.
      */
     public Car getCheapestCar() {
-        Car cheapestCar = carsForSale.get(0);
-        for (Car car : carsForSale) {
-            if (car.getPrice() < cheapestCar.getPrice()) {
-                cheapestCar = car;
+        Car cheapestCar = carsForSale.get(0);  // Sets index 0 as the cheapest car.
+        for (Car car : carsForSale) {       // runs through the list.
+            if (car.getPrice() < cheapestCar.getPrice()) { // if current car price is less than the current cheapestcar
+            cheapestCar = car;   // then we set Cheapestcar to this new car object.
             }
         }
-        return cheapestCar;
+        return cheapestCar;         // returns the car with the lowest getprice value.
     }
     
     /**
@@ -80,8 +80,8 @@ public class CarDealerShip
     */
     public void sortCarsByPrice()
     {
-        Comparator comp = Comparator.comparingDouble(Car::getPrice);
-        carsForSale.sort(comp);
+        Comparator comp = Comparator.comparingDouble(Car::getPrice);  // parses all the cars, and extracts all the prices
+        carsForSale.sort(comp); // sorts these prices.
     }
     
     /**
@@ -98,13 +98,12 @@ public class CarDealerShip
      */
     public Car presentRandomCarToCustomer()
     {
-        Random random = new Random();
-        int randomNumber = random.nextInt(carsForSale.size());
+        Random random = new Random();  // initializes the Random generator as random.
+        int randomNumber = random.nextInt(carsForSale.size());  // Gets a psuedo random number with the bounds being the
+                                                                // size of the ArrayList, so that we get a random car.
+        return  carsForSale.get(randomNumber);  // returns this random car object.
 
-        return  carsForSale.get(randomNumber);
-
-        //TODO Implement this method
-        //throw new UnsupportedOperationException();
     }
+
 
 }
