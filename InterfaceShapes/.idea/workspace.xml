@@ -4,11 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da30328d-f98b-4668-a179-ff668c6d7295" name="Changes" comment="" />
+    <list default="true" id="da30328d-f98b-4668-a179-ff668c6d7295" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterfaceShapes/BLL/ShapeCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/InterfaceShapes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/MRS-Starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/MRS-Starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/config/config.example.settings" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/config/config.example.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/data/movie_titles.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/data/movie_titles.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/resources/View/MovieView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/resources/View/MovieView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/BLL/MovieManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/BLL/MovieManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/IMovieDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/IMovieDataAccess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/MovieDAO_Mock.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/MovieDAO_Mock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/db/MovieDAO_DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/db/MovieDAO_DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/db/MyDatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/DAL/db/MyDatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Controller/MovieViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Controller/MovieViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Model/MovieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/Model/MovieModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/View/MovieView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../MRS-CRUD/src/easv/mrs/GUI/View/MovieView.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -19,19 +45,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Datamatiker/Projekt/SchoolProject/AssignmentZuul&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Datamatiker/Projekt/SchoolProject/AssignmentZuul",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="InterfaceShapes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,6 +80,7 @@
       <workItem from="1699002304187" duration="1215000" />
       <workItem from="1699262818252" duration="227000" />
       <workItem from="1699344331733" duration="848000" />
+      <workItem from="1701122608337" duration="48000" />
     </task>
     <servers />
   </component>

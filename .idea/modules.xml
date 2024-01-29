@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysDemo/ArraysDemo.iml" filepath="$PROJECT_DIR$/ArraysDemo/ArraysDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment4/Assignment4.iml" filepath="$PROJECT_DIR$/Assignment4/Assignment4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assignment5/Assignment5.iml" filepath="$PROJECT_DIR$/Assignment5/Assignment5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComputerSciencePracticeTest/ComputerSciencePracticeTest.iml" filepath="$PROJECT_DIR$/ComputerSciencePracticeTest/ComputerSciencePracticeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileWriting/FileWriting.iml" filepath="$PROJECT_DIR$/FileWriting/FileWriting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaFX-Template/JavaFX-Template.iml" filepath="$PROJECT_DIR$/JavaFX-Template/JavaFX-Template.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MRS-CRUD/MRS-CRUD.iml" filepath="$PROJECT_DIR$/MRS-CRUD/MRS-CRUD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyTunes/MyTunes.iml" filepath="$PROJECT_DIR$/MyTunes/MyTunes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Questionaire/Questionaire.iml" filepath="$PROJECT_DIR$/Questionaire/Questionaire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuestionaireHelp/QuestionaireHelp.iml" filepath="$PROJECT_DIR$/QuestionaireHelp/QuestionaireHelp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Questions/Questions.iml" filepath="$PROJECT_DIR$/Questions/Questions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SchoolProject.iml" filepath="$PROJECT_DIR$/SchoolProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StrategyCalcExample/StrategyCalcExample.iml" filepath="$PROJECT_DIR$/StrategyCalcExample/StrategyCalcExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StrategyExample/StrategyExample.iml" filepath="$PROJECT_DIR$/StrategyExample/StrategyExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String-Assignment/String-Assignment.iml" filepath="$PROJECT_DIR$/String-Assignment/String-Assignment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StringApplication/StringApplication.iml" filepath="$PROJECT_DIR$/StringApplication/StringApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestHandout/TestHandout.iml" filepath="$PROJECT_DIR$/TestHandout/TestHandout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreeLayeredArchitectureExample/ThreeLayeredArchitectureExample.iml" filepath="$PROJECT_DIR$/ThreeLayeredArchitectureExample/ThreeLayeredArchitectureExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/TicTacToe/TicTacToe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Todo/Todo.iml" filepath="$PROJECT_DIR$/Todo/Todo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TrainingArc/TrainingArc.iml" filepath="$PROJECT_DIR$/TrainingArc/TrainingArc.iml" />
+    </modules>
+  </component>
+</project>
