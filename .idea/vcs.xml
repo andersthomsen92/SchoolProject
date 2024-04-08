@@ -2,8 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BrewPass" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MyTunes/MyTunes" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Questionaire" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/String-Assignment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TheImageViewer/TheImageViewer" vcs="Git" />
   </component>
 </project>
